@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --primary: #38bdf8;
+    --text: #e5e7eb;
+    --muted: #94a3b8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #020617, #0f172a);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 3rem;
+    border-radius: 20px;
+    max-width: 600px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary);
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.hero h2 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.hero p {
+    color: var(--muted);
+    margin-top: 0.5rem;
+}
+
+/* MAIN */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 3rem 1rem;
+}
+
+.card {
+    background: var(--card);
+    padding: 2rem;
+    border-radius: 16px;
+    margin-bottom: 4rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.card p {
+    margin-bottom: 1rem;
+    
+}
+
+.card span {
+
+        margin-bottom: 1rem;
+
+
+
+    }
+
+
+.card h3 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.languages {
+    background: var(--card);
+    padding: 2rem;
+    border-radius: 16px;
+    margin-bottom: 4rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.languages p {
+    margin-bottom: 1rem;
+    
+}
+
+.languages span {
+
+        margin-bottom: 1rem;
+
+
+
+    }
+
+.languages h3 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    background: rgba(56, 189, 248, 0.15);
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* BOTÓN SKILL */
+.skill-btn {
+    background: rgba(56, 189, 248, 0.15);
+    color: var(--text);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin: 5px;
+    transition: 
+        background 0.3s ease,
+        transform 0.2s ease,
+        box-shadow 0.3s ease;
+}
+
+/* HOVER (PC) */
+.skill-btn:hover {
+    background: var(--primary);
+    color: #020617;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.4);
+}
+
+/* CLICK / TOUCH (MOBILE) */
+.skill-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 10px rgba(56, 189, 248, 0.6);
+}
+
+/* QUITAR ESTILO DEFAULT */
+.skill-btn:focus {
+    outline: none;
+}
+
+
+/* EXPERIENCE */
+.job {
+    margin-bottom: 1.5rem;
+}
+
+.job h4 {
+    font-size: 1.1rem;
+}
+
+.job span {
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.job ul {
+    margin-top: 0.5rem;
+    padding-left: 20px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background: #020617;
+}
+
+.footer {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    background: #020617;
+}
+
+.footer h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+
+/* CONTENEDOR */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+}
+
+/* BOTÓN */
+.icon-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(56, 189, 248, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #020617;
+}
+
+/* TÍTULO */
+.footer h1 {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+/* CONTENEDOR ICONOS */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+}
+
+/* BOTÓN BASE */
+.icon-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.08);
+    position: relative;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+    animation: fadeUp 0.8s ease both;
+}
+
+/* ANIMACIÓN DE ENTRADA */
+.icon-btn:nth-child(1) { animation-delay: 0.1s; }
+.icon-btn:nth-child(2) { animation-delay: 0.25s; }
+.icon-btn:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* IMAGEN */
+.icon-btn img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    transition: filter 0.3s ease;
+}
+
+/* HOVER GENERAL */
+.icon-btn:hover {
+    transform: translateY(-6px);
+}
+
+/* CLICK / TOUCH */
+.icon-btn:active {
+    transform: scale(0.92);
+}
+
+/* TOOLTIP */
+.icon-btn::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -38px;
+    background: #020617;
+    color: #e5e7eb;
+    font-size: 0.75rem;
+    padding: 6px 10px;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(5px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+}
+
+.icon-btn:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== COLORES POR RED ===== */
+
+/* GMAIL */
+.icon-btn.gmail:hover {
+    background: #ea4335;
+    box-shadow: 0 10px 25px rgba(234,67,53,0.6);
+}
+
+/* WHATSAPP */
+.icon-btn.whatsapp:hover {
+    background: #25d366;
+    box-shadow: 0 10px 25px rgba(37,211,102,0.6);
+}
+
+/* LINKEDIN */
+.icon-btn.linkedin:hover {
+    background: #0a66c2;
+    box-shadow: 0 10px 25px rgba(10,102,194,0.6);
+}
+
+/* ÍCONO BLANCO EN HOVER */
+.icon-btn:hover img {
+    filter: brightness(0) invert(1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .footer h1 {
+        font-size: 1.3rem;
+    }
+
+    .icon-btn {
+        width: 52px;
+        height: 52px;
+    }
+
+    .icon-btn img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .hero-content {
+        padding: 2rem;
+    }
+}
+
+
+
+
+
